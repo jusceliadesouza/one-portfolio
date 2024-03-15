@@ -1,0 +1,152 @@
+:root {
+  --primary-color: #7de2d1;
+  --secondary-color: #339989;
+  --tertiary-color: #2b2c28;
+  --black: #131515;
+  --white: #fffafb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 70rem;
+  height: 100vh;
+
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+
+  font: 400 1.5rem "Montserrat", sans-serif;
+  background-color: var(--black);
+  color: var(--white);
+}
+
+header,
+nav,
+main,
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  width: 100%;
+  padding: 2rem 0;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+header :first-child {
+  color: var(--primary-color);
+}
+
+nav {
+  gap: 5rem;
+  font-size: 1.25rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  transition: ease-in-out 0.2s;
+}
+
+a:hover {
+  color: var(--primary-color);
+  filter: brightness(0.9);
+}
+
+a.active,
+a.active:hover {
+  cursor: default;
+  color: var(--primary-color);
+  filter: none;
+}
+
+.container {
+  width: 100%;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  gap: 2.5rem;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+}
+
+.content-about {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 2.5rem;
+}
+
+.content-about-context {
+  width: 100%;
+  display: flex;
+
+  gap: 5rem;
+}
+
+footer {
+  width: 100%;
+  padding: 2rem;
+  font: 300 1.25rem "Montserrat";
+}
+
+footer a {
+  color: var(--primary-color);
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 87.5%;
+  }
+
+  body {
+    padding: 2rem;
+  }
+
+  .none {
+    display: none;
+  }
+
+  .container {
+    width: 100%;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  .content {
+    width: 100%;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  nav {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+  footer p {
+    font: 300 1.125rem "Montserrat";
+    text-align: center;
+  }
+}

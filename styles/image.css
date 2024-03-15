@@ -1,0 +1,18 @@
+.content-image {
+  width: 100%;
+}
+
+img {
+  width: 100%;
+  max-width: 30rem;
+
+  border-radius: 1rem;
+}
+
+@media (max-width: 1200px) {
+  .content-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

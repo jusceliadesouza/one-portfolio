@@ -1,0 +1,29 @@
+.buttons {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.button {
+  width: 100%;
+  height: 4rem;
+  padding: 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 2px solid var(--primary-color);
+  border-radius: 0.5rem;
+  color: var(--white);
+}
+
+.button:hover {
+  font-weight: 600;
+  background-color: var(--primary-color);
+  color: var(--black);
+  filter: brightness(0.9);
+}
